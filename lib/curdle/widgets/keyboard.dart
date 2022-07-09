@@ -1,3 +1,4 @@
+import 'package:curdle/curdle/models/letter_model.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
@@ -6,7 +7,7 @@ import 'package:flutter/src/widgets/framework.dart';
 
 const _qwerty = [
   ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
-  ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K'],
+  ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
   ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'DEL'],
 ];
 
@@ -14,11 +15,13 @@ class KeyBoard extends StatelessWidget {
   final void Function(String) onKeyTapped;
   final ui.VoidCallback onDeleteTapped;
   final ui.VoidCallback onEnterTapped;
+  final Set<Letter> letters;
   const KeyBoard({
     Key? key,
     required this.onKeyTapped,
     required this.onDeleteTapped,
     required this.onEnterTapped,
+    required this.letters,
   }) : super(key: key);
 
   @override
@@ -36,11 +39,18 @@ class KeyBoard extends StatelessWidget {
                   } else if (letter == 'ENTER') {
                     return _KeyboardButton.enter(onTap: onEnterTapped);
                   }
-                  return _KeyboardButton(
-                    onTap: () => onKeyTapped(letter),
-                    letter: letter,
-                    backgroundColor: Colors.grey,
+
+                  final letterKey = letters.firstWhere(
+                    (e) => e.val == letter,
+                    orElse: () => Letter.empty(),
                   );
+
+                  return _KeyboardButton(
+                      onTap: () => onKeyTapped(letter),
+                      letter: letter,
+                      backgroundColor: letterKey != Letter.empty()
+                          ? letterKey.backgroundColor
+                          : Colors.grey);
                 },
               ).toList(),
             ),
