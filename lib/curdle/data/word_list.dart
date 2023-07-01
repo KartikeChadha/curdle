@@ -1,5 +1,20 @@
 const List<String> sixLetterWords = [
-  'ishita',
-  'pirate',
-  'pizzas',
+  'pirate',  'pizzas',  'excuse', 'wonder', 'kernel', 'triple', 'purple', 'magnet', 'divide', 'resort',
+  'invent', 'stable', 'finish', 'rhythm', 'expert', 'deluxe', 'remote', 'basics', 'humble', 'guitar',
+  'snakes', 'scribe', 'planet', 'scribe', 'beyond', 'sticky', 'canvas', 'coffin', 'parrot', 'purple',
+  'stereo', 'sudden', 'plunge', 'frozen', 'demand', 'system', 'beacon', 'steady', 'desire', 'impact',
+  'paddle', 'cookie', 'breeze', 'bridge', 'novice', 'tunnel', 'matrix', 'spring', 'trophy', 'dragon',
+  'prefer', 'cactus', 'mirror', 'sprout', 'blossom', 'sunset', 'turtle', 'banner', 'winter', 'floral',
+  'rocket', 'stream', 'castle', 'whisky', 'purple', 'bangle', 'legend', 'pocket', 'flower', 'silver',
+  'sunset', 'banana', 'carpet', 'wrench', 'pebble', 'button', 'pickle', 'candle', 'butter', 'summer',
+  'rocket', 'orange', 'pencil', 'dragon', 'spirit', 'camera', 'golden', 'letter', 'planet', 'singer',
+  'saddle', 'animal', 'parrot', 'garden', 'forest', 'rhythm', 'purple', 'desert', 'yellow', 'shadow', 
+  'breeze', 'safari', 'flavor', 'paddle', 'purple', 'rocket', 'spring', 'planet', 'fossil', 'pirate', 
+  'travel', 'basket', 'turkey', 'carpet', 'button', 'pickle', 'butter', 'summer', 'rocket', 'orange',
+  'pencil', 'dragon', 'spirit', 'camera', 'golden', 'letter', 'planet', 'singer', 'saddle', 'animal',
+  'parrot', 'garden', 'forest', 'rhythm', 'purple', 'desert', 'yellow', 'shadow', 'breeze', 'safari',
+  'flavor', 'paddle', 'purple', 'rocket', 'spring', 'planet', 'fossil', 'pirate', 'travel', 'basket',
+  'turkey', 'carpet', 'button', 'pickle', 'butter', 'summer', 'rocket', 'orange', 'pencil', 'dragon',
+  'spirit', 'camera', 'golden', 'letter', 'planet', 'singer', 'saddle', 'animal', 'parrot', 'garden',
+  'forest', 'rhythm', 'purple', 'desert', 'yellow', 'shadow', 'breeze', 'safari', 'flavor', 'paddle'
 ];
